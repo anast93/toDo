@@ -88,9 +88,7 @@ todoControl.addEventListener('submit', function(event){
         completed: false
     };
 
-    if(todoData[0].value == '') {
-        todoData.splice(0,1);
-    }    
+       
         todoData.push(newTodo);
         
         localStorage.setItem('memory', JSON.stringify(todoData));
